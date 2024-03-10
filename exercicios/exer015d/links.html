@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*tira o sublinhado*/
+            font-weight: bold; /*"peso da fonte*/
+        }
+        /*pseudo classes esta segida de :*/
+        a:visited {
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial {
+            background-color: rgb(255, 140, 140);
+        }
+        .especial::before {
+            content: ' ⇒ ';
+        }
+        .especial::after{
+            content: ' ⇐ ' ;
+        }
+        /*pseudo elemento está seguido de  ::*/
+        a::before{/*antes do link tem a mensagem link que não altera no link*/
+            content: ' ⇒ ';
+            text-decoration: none;
+            font-weight: normal;
+        
+        }
+        a::after{ /*depois do link tem a mensagem link que não altera no link*/
+            content:  ' ⇐ ';
+            text-decoration: none;
+            font-weight: normal;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site CursoemVídeo</a></li>
+        <li><a href="https://www.alfaromeo.it" target="_blank" class="especial">Site Oficial Alfa Romeu</a></li>
+        <li><a href="https://www.maserati.com/it/it" target="_blank" class="especial">Site Oficial Maserati</a></li>
+    </ul>
+</body>
+</html>
