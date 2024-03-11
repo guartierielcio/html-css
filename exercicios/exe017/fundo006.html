@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo 006</title>
+    <title>Fundo fixo de tela</title>
 </head>
 <style>
     body{
@@ -13,11 +13,19 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed; /* o texto rola e o fundo fica fixo*/
+
+        /* Shorthand - background 
+        sequência => color > image > positios > repeat > [size] > attachement
+        */
+        /*background: black, url('imagens/wallpaper002.jpg'), center center no-repeat, fixed;
+        background-size: cover;  - não funcionou para mim*/
+        
     }
 
     main{
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border: 1px solid blue;
@@ -28,9 +36,14 @@
     <main>
         <h1>Teste de imagem de Fundo</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repudiandae eaque possimus ea inventore quisquam sed quia quasi in officia tenetur vero. Asperiores quisquam accusamus labore aliquid? Illo, magni libero?
-            
-        </p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repudiandae eaque possimus ea inventore quisquam sed quia quasi in officia tenetur vero. Asperiores quisquam accusamus labore aliquid? Illo, magni libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit quos facere hic. Magnam sapiente, doloremque pariatur voluptates aut, vel excepturi eum laborum nobis provident et eaque labore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, eaque asperiores commodi velit adipisci architecto? Unde labore, in quas animi facere nemo quam, libero, a autem ipsam quia excepturi dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur totam, aspernatur cum minus itaque, labore assumenda quasi iure mollitia, ipsam et. Aliquid libero rerum veritatis delectus, vitae a quae porro!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi mollitia maiores aspernatur ipsam, rem adipisci? Nulla, aut minus. Officiis ipsum rem porro expedita eum a delectus tempora veritatis quas alias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos mollitia suscipit dolor minus. Sequi dignissimos quidem nemo nostrum nobis possimus quis, enim harum mollitia deserunt est, unde molestiae illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, ipsa officia aliquam sint ex aspernatur laudantium deleniti voluptatem itaque. Similique aspernatur labore fugit deserunt in quaerat officiis impedit earum voluptas!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis, libero dolore, praesentium quisquam saepe beatae aspernatur obcaecati esse in ipsum. Voluptatum, neque provident? Nisi vero ipsam eum dolorum repellendus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos harum rem, amet numquam vitae tempore inventore enim, perspiciatis magnam earum quibusdam deleniti commodi dolorem, quia voluptatibus id praesentium porro!</p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum aut natus aperiam sequi pariatur nihil soluta modi, quam suscipit repellat perspiciatis sint. Nihil aspernatur odio inventore unde ad quo?
+            </p>
     </main>
 </body>
 </html>
