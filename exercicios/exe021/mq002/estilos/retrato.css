@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
-/*cONFIRGURAÇÕES APARELHO EM PÉ (PORTEAITE)*/
+/*cONFIRGURAÇÕES APARELHO EM PÉ retrato (PORTRAITE)*/
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
